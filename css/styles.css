@@ -8,7 +8,9 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    margin: 0px
+    margin: 0px auto;
+    max-width: 80%;
+    width: 100%;
 }
 
 hr {
@@ -27,10 +29,11 @@ hr {
 }
 
 .container-center {
-    justify-content: center;
-    max-width: 600px;
+    max-width: 900px;
+    width: 100%;
     margin: auto;
 }
+  
 
 /** links **/
 .link {
@@ -75,6 +78,8 @@ hr {
     color: white;
     padding: 1rem;
     border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    
 }
 
 .navigation .nav-brand {
@@ -136,11 +141,13 @@ hr {
 /** footers **/
 
 .footer {
-    background-color: #7C3AED;
-    padding: 4rem 1rem;
+    background-color:var(--primary-color);
+    padding: 1.5rem ;
     text-align: center;
     color: white;
     border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+
 }
 
 .footer .link {
@@ -180,7 +187,7 @@ hr {
     width: 350px;
     display: block;
     margin: auto;
-    
+    text-align: center;
 }
 .summary{
     color: #7C3AED;
@@ -236,4 +243,25 @@ hr {
 }
 
 
-
+@media (max-width: 900px) {
+    body {
+      max-width: 95%;
+      width: 100%;
+    }
+  
+    .list-item-inline {
+      display: inline;
+      padding: 0rem;
+    }
+  
+    .container-center {
+      width: auto;
+    }
+  
+    .link-primary {
+      display: block;
+    }
+  }
+  .para{
+      text-align: center;
+  }
